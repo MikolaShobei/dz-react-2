@@ -24,7 +24,6 @@ class AllPosts extends Component {
         );
     }
     componentDidMount() {
-		console.log('componentDidMount');
 		fetch('https://jsonplaceholder.typicode.com/posts')
 			.then(value => value.json())
 			.then(posts => {
